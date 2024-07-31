@@ -1,5 +1,5 @@
 {
-    "name": "serfe/module-uncheableblockdetector",
+    "name": "serfe/module-uncacheableblockdetector",
     "description": "Detects blocks that are uncacheable inside your Magento 2 system",
     "type": "magento2-module",
     "license": "GPL-3.0",
@@ -13,19 +13,6 @@
     "require": {
         "php": "*",
         "magento/framework": "*"
-    },
-    "require-dev": {
-        "magento/marketplace-eqp": "*",
-        "sebastian/phpcpd": "*",
-        "phpmd/phpmd": "*",
-        "phpcompatibility/php-compatibility": "*",
-        "magento/magento2-base": "2.4.*",
-        "phpunit/php-code-coverage": "^9.2",
-        "phpunit/phpunit": "^9.5",
-        "phpstan/phpstan": "^1.4",
-        "magento/magento-coding-standard": "^19.0",
-        "micheh/phpcs-gitlab": "^1.1",
-        "bitexpert/phpstan-magento": "^0.17.0"
     },
     "autoload": {
         "files": [
