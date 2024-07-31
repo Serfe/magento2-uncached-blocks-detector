@@ -1,4 +1,4 @@
-# Serfe Uncached Blocks Detector
+# Serfe Uncached Blocks Detector - Magento 2
 
 The propouse of this module is to intercept the normal workflow of page rendering of Magento 2 and force the exit the rendering of the the page if a block that is uncacheable is reached.
 
@@ -25,7 +25,7 @@ bin/magento setup:upgrade
 ```
 
 If you're in Production Mode this commands as well:
-```sh
+```bash
 $ php bin/magento setup:di:compile
 $ php bin/magento setup:static-content:deploy
 $ php bin/magento cache:flush
@@ -41,7 +41,7 @@ Go into
 
 ### Production mode settings - Expert mode
 
-This settings cannot be changed when in production mode as the whole section is disabled by default. 
+This settings cannot be changed when in production mode as the whole section is disabled by default.
 
     You should test this on the local environment only!
 
@@ -49,7 +49,7 @@ If know what you are doint and needed to modify this values on the production se
 
 ```bash
 magento config:set --lock-env dev/cache_detector/enabled 1        ( or 0 if you wish to disable)
-magento config:set --lock-env dev/cache_detector/die 1   (0 if you just want a warning)
+magento config:set --lock-env dev/cache_detector/die 1   (0 if you just want a warning in the debug.log file)
 ```
 
 # About

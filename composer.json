@@ -5,14 +5,16 @@
     "license": "GPL-3.0",
     "authors": [
         {
-            "name": "Esteban Serfe",
+            "name": "Esteban Zeller",
             "email": "info@serfe.com"
         }
     ],
     "minimum-stability": "stable",
     "require": {
-        "php": "*",
-        "magento/framework": "*"
+        "php":  "7.*|^8.1",
+        "magento/framework": "*",
+        "magento/module-page-cache": "*",
+        "magento/module-store": "*"
     },
     "autoload": {
         "files": [
