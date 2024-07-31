@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!-- 
+/**
+ * This file is part of Serfe/UncacheableBlocksDetector which is released under GNU General Public License
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<section id="dev" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+			<label>dev</label>
+			<tab>advanced</tab>
+			<resource>Serfe_UncacheableBlockDetector::config_serfe_unacheableblockdetector</resource>
+			<group id="cache_detector" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<label>cache_detector</label>
+				<field id="enabled" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>enabled</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="die" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>Die on uncacheable block</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

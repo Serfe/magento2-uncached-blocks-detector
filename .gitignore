@@ -1,0 +1,14 @@
+vendor/
+auth.json
+.docker
+
+# PHP unit coverage
+coverage
+.phpunit.result.cache
+
+# PHP CS
+codingstandard.xml
+codequality_phpcs.json
+
+# General
+scandirs.txt

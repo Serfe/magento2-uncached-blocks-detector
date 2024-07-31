@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<!-- 
+/**
+ * This file is part of Serfe/UncacheableBlocksDetector which is released under GNU General Public License
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Serfe_UncacheableBlockDetector">
+        <sequence>
+            <module name="Magento_Framework" />
+            <module name="Magento_PageCache" />
+        </sequence>
+    </module>
+</config>
