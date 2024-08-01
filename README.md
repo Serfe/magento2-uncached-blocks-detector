@@ -54,7 +54,7 @@ When using this last option, you will see the detected entries into the debug.lo
 
 # About Us
 
-[Serfe](https://www.serfe.com/?utm_medium=referral_profile&utm_source=github#115959) develops complete e-commerce solutions based on Magento 2 system and other platforms. Feel free to check it on the website.
+[Serfe](https://www.serfe.com/?utm_medium=referral_profile&utm_source=github&utm_campaign=115959) develops complete e-commerce solutions based on Magento 2 system and other platforms. Feel free to check it on the website.
 
 # Contributing
 
