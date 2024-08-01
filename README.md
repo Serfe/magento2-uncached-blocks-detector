@@ -52,10 +52,10 @@ php bin/magento config:set --lock-env dev/cache_detector/die 0
 
 When using this last option, you will see the detected entries into the debug.log file.
 
-# About Us
+## About Us
 
 [Serfe](https://www.serfe.com/?utm_medium=referral_profile&utm_source=github&utm_campaign=115959) develops complete e-commerce solutions based on Magento 2 system and other platforms. Feel free to check it on the website.
 
-# Contributing
+### Contributing
 
 We welcome any contribution to this module. Fork the repo, make your changes and create a pull request with your changes.
