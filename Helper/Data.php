@@ -1,6 +1,6 @@
 <?php
 /**
- * This file is part of Serfe/UncacheableBlocksDetector which is released under GNU General Public License
+ * Copyright © Serfe S.A. All rights reserved.
  * See COPYING.txt for license details.
  */
 declare(strict_types=1);
@@ -97,16 +97,6 @@ class Data extends AbstractHelper
     }
     
     /**
-     * Returns if the application is in frontend area or not
-     *
-     * @return boolean
-     */
-    private function isFrontend()
-    {
-        return $this->appState->getAreaCode() == \Magento\Framework\App\Area::AREA_FRONTEND;
-    }
-
-    /**
      * Return if feature is enabled
      *
      * @return boolean
@@ -126,18 +116,12 @@ class Data extends AbstractHelper
                     __('Full page cache is not enabled!')
                 );
             }
-        
-            if (!$this->isFrontend()) {
-                throw new \Magento\Framework\Exception\LocalizedException(
-                    __('This is not tested on other section than frontend!')
-                );
-            }
             return (bool) $this->scopeConfig
                 ->getValue(
                     self::XML_PATH_DIE,
                     \Magento\Store\Model\ScopeInterface::SCOPE_STORE
                 );
-        } 
+        }
         return false;
     }
 }
