@@ -96,7 +96,7 @@ class Data extends AbstractHelper
         return $this->isVarnishEnabled;
     }
     
-    /**
+    /** 
      * Return if feature is enabled
      *
      * @return boolean
