@@ -1,5 +1,7 @@
 # Serfe Uncached Blocks Detector - Magento 2
 
+[![Latest Stable Version](https://poser.pugx.org/serfe/module-uncacheableblockdetector/v)](https://packagist.org/packages/serfe/module-uncacheableblockdetector) [![Total Downloads](https://poser.pugx.org/serfe/module-uncacheableblockdetector/downloads)](https://packagist.org/packages/serfe/module-uncacheableblockdetector) [![License](https://poser.pugx.org/serfe/module-uncacheableblockdetector/license)](https://packagist.org/packages/serfe/module-uncacheableblockdetector) [![PHP Version Require](https://poser.pugx.org/serfe/module-uncacheableblockdetector/require/php)](https://packagist.org/packages/serfe/module-uncacheableblockdetector)
+
 The propouse of this module is to intercept the normal workflow of page rendering of Magento 2 and force the exit the rendering of the page if a block that is uncacheable is reached. If the block is uncacheable, the wholepage get it's cache disabled and cannot be handled by file cache or Varnish cache.
 
 This is usefull to debug any module that might contain the following entry inside one of it's layout definitions (catalog_product_view.xml for example):
